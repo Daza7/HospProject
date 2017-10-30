@@ -9,19 +9,37 @@
 
 
      <body>
-         <script language="javascript">
+         <img src="images/hospitalMap.jpg" usemap="#hospital">
 
-			 
-		 function window_onLoad(){
-				for (var patientNumber = 0; patientNumber<=8; patientNumber++)
+         <map name="hospital">
+             <area shape="rect" coords="" alt="bed0" href="bed1">
+             <area shape="rect" coords="" alt="bed1" href="bed1">
+             <area shape="rect" coords="" alt="bed2" href="bed1">
+             <area shape="rect" coords="" alt="bed3" href="bed1">
+             <area shape="rect" coords="" alt="bed4" href="bed1">
+             <area shape="rect" coords="" alt="bed5" href="bed1">
+             <area shape="rect" coords="" alt="bed6" href="bed1">
+             <area shape="rect" coords="" alt="bed7" href="bed1">
+             <area shape="rect" coords="" alt="bed8" href="bed1">
+        </map>
+
+
+
+
+
+
+
+       <script language="javascript"> 
+		 function window_onLoad() {
+		     for (var patientNumber = 0; patientNumber<=8; patientNumber++)
 					{ 
 					var patientOverhead = new array ("Current_Bed", "Injury", "gender", "forename", "surname");			 
 					}
 			 }
 			 
 			              
-         function ClearAllInfo (){
-                 getPatientNumber{
+         function ClearAllInfo () {
+              getPatientNumber; {
                      currentBed = "";
                      injury      = "";
                      gender      = "";
@@ -45,6 +63,5 @@
             //}
 
          </script>
-
     </body>
 </html>
