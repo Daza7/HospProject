@@ -10,9 +10,18 @@
 
      <body>
          <script language="javascript">
-             
-             function ClearAllInfo (){
-                 GetSelectedPatient{
+
+			 
+		 function window_onLoad(){
+				for (var patientNumber = 0; patientNumber<=8; patientNumber++)
+					{ 
+					var patientOverhead = new array ("Current_Bed", "Injury", "gender", "forename", "surname");			 
+					}
+			 }
+			 
+			              
+         function ClearAllInfo (){
+                 getPatientNumber{
                      Current_Bed = "";
                      Injury      = "";
                      Gender      = "";
@@ -21,17 +30,10 @@
                  }
              }
 
-             function GetSelectedPatient (){
+             
+		 function getPatientNumber (){
 
              }
-			 
-			 function window_onLoad(){
-				for (var patientNumber = 0; patientNumber<=8; patientNumber++)
-					{ 
-					var patientOverhead = new array ("Current_Bed", "Injury", "gender", "forename", "surname");			 
-					}
-			 }
-			 
 			 
 			 
 			 
