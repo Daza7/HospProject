@@ -57,6 +57,7 @@
 
      <body>
          <div class ="center"><h1>Hospital Layout</h1></div>
+
          <img src="images/hospitalMap.jpg" usemap="#hospital">
 
          <map name="hospital">
@@ -70,6 +71,17 @@
              <area shape="rect" coords="1487,883,1643,1179" alt="bed7" href="bed1">
              <area shape="rect" coords="2587,883,2747,1179" alt="bed8" href="bed1">
         </map>
+       
+        
+        <div id="infobox" class="editInfoBox">
+
+          <div class="info-content">
+              <span class="close">&times;</span>
+              <p>edit patient data</p>
+          </div>
+
+        </div>
+
 
 
 
@@ -78,6 +90,27 @@
 
 
        <script language="javascript"> 
+
+           var info = document.getElementById('infobox');
+
+
+           var span = document.getElementsByClassName("close")[0];
+
+           span.onclick = function() {
+               modal.style.display = "none";
+           }
+
+           window.onclick = function(event) {
+               if (event.target == modal) {
+                   modal.style.display = "none";
+               }
+           }
+
+
+
+
+
+
 		 function window_onLoad() {
 		     for (var patientNumber = 0; patientNumber<=8; patientNumber++)
 					{ 
@@ -101,6 +134,10 @@
 
              }
 			 
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // Patient_NULL()		{                                        //table for Patient 0 (NULL PATIENT KEEP NULL)
                 // Current_Bed = ""; -->
