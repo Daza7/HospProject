@@ -56,20 +56,22 @@
 
 
      <body>
+         <div id="CSSButton">Open Modal</div>
+
          <div class ="center"><h1>Hospital Layout</h1></div>
 
          <img src="images/hospitalMap.jpg" usemap="#hospital">
 
          <map name="hospital">
-             <area shape="rect" coords="387,883,531,1179" alt="bed0" href="bed1">
-             <area shape="rect" coords="537,883,669,1179" alt="bed1" href="bed1">
-             <area shape="rect" coords="697,883,847,1179" alt="bed2" href="bed1">
-             <area shape="rect" coords="851,883,999,1179" alt="bed3" href="bed1">
-             <area shape="rect" coords="1003,883,1169,1179" alt="bed4" href="bed1">
-             <area shape="rect" coords="1161,883,1329,1179" alt="bed5" href="bed1">
-             <area shape="rect" coords="1316,883,1485,1179" alt="bed6" href="bed1">
-             <area shape="rect" coords="1487,883,1643,1179" alt="bed7" href="bed1">
-             <area shape="rect" coords="2587,883,2747,1179" alt="bed8" href="bed1">
+             <area shape="rect" coords="387,883,531,1179"   alt="#"   href="#" onclick="CSSButton">
+             <area shape="rect" coords="537,883,669,1179"   alt="#"   href="#">
+             <area shape="rect" coords="697,883,847,1179"   alt="#"   href="#">
+             <area shape="rect" coords="851,883,999,1179"   alt="#"   href="#">
+             <area shape="rect" coords="1003,883,1169,1179" alt="#"   href="#">
+             <area shape="rect" coords="1161,883,1329,1179" alt="#"   href="#">
+             <area shape="rect" coords="1316,883,1485,1179" alt="#"   href="#">
+             <area shape="rect" coords="1487,883,1643,1179" alt="#"   href="#">
+             <area shape="rect" coords="2587,883,2747,1179" alt="#"   href="#">
         </map>
        
         
@@ -91,24 +93,28 @@
 
        <script language="javascript"> 
 
-           var info = document.getElementById('infobox');
+           // Get the modal
+           var infobox = document.getElementById('editInfoBox');
 
-
+           // Get the <span> element that closes the modal
            var span = document.getElementsByClassName("close")[0];
 
-           span.onclick = function() {
-               modal.style.display = "none";
+           // When the user clicks on the button, open the modal 
+           CSSButton.onclick = function() {
+               editInfoBox.style.display = "block";
            }
 
+           // When the user clicks on <span> (x), close the modal
+           span.onclick = function() {
+               editInfoBox.style.display = "none";
+           }
+
+           // When the user clicks anywhere outside of the modal, close it
            window.onclick = function(event) {
-               if (event.target == modal) {
-                   modal.style.display = "none";
+               if (event.target == infobox) {
+                   editInfoBox.style.display = "none";
                }
            }
-
-
-
-
 
 
 		 function window_onLoad() {
