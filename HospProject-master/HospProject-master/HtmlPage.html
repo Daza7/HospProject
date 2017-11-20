@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HospProjEasy</title>
+
+     <style>
+        h1 {
+            text-align: center;
+           }
+        p.serif
+           {
+             font-family: "Times New Roman", Times, serif;
+             font-size: 10px;
+           }
+    </style>
+</head>
+<body bgcolor="#AAAAAA">
+
+
+    <p class="serif"><h1>Hospital System</h1></p>
+
+    <img id = "BedLEmpty1" src="images/Beds/BedLEmpty.gif" style="width:250px;height:125px;" onclick="changeImageLeft1()"/>
+    <img id = "BedREmpty1" src="images/Beds/BedREmpty.gif" style="width:250px;height:125px;" onclick="changeImageRight1()" /><br />
+    <img id = "BedLEmpty2" src="images/Beds/BedLEmpty.gif" style="width:250px;height:125px;" onclick="changeImageLeft2()" />
+    <img id = "BedREmpty2" src="images/Beds/BedREmpty.gif" style="width:250px;height:125px;" onclick="changeImageRight2()" /><br />
+    <img id = "BedLEmpty3" src="images/Beds/BedLEmpty.gif" style="width:250px;height:125px;" onclick="changeImageLeft3()" />
+    <img id = "BedREmpty3" src="images/Beds/BedREmpty.gif" style="width:250px;height:125px;" onclick="changeImageRight3()" /><br />
+    <img id = "BedLEmpty4" src="images/Beds/BedLEmpty.gif" style="width:250px;height:125px;" onclick="changeImageLeft4()" />
+    <img id = "BedREmpty4" src="images/Beds/BedREmpty.gif" style="width:250px;height:125px;" onclick="changeImageRight4()" /><br />
+    
+    <input id = "male"   type="radio" name="gender" value="male"> Male
+    <input id = "female" type="radio" name="gender" value="female"> Female
+    <input id = "other"  type="radio" name="gender" value="other"> Other
+    
+
+    <script>
+
+
+        var imageLeft1 = document.getElementById("BedLEmpty1");
+        var imageLeft2 = document.getElementById("BedLEmpty2");
+        var imageLeft3 = document.getElementById("BedLEmpty3");
+        var imageLeft4 = document.getElementById("BedLEmpty4");
+
+        var imageRight1 = document.getElementById("BedREmpty1");
+        var imageRight2 = document.getElementById("BedREmpty2");
+        var imageRight3 = document.getElementById("BedREmpty3");
+        var imageRight4 = document.getElementById("BedREmpty4");
+
+        function changeImageLeft1()
+     {
+            if (imageLeft1.getAttribute('src') == "BedLEmpty.gif")
+            {
+                imageLeft.src = "images/Beds/BedLEmptySel.gif";
+            }
+            else
+            {
+                imageLeft1.src = "images/Beds/BedLEmptySel.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+
+            }
+    }
+        function changeImageLeft2()
+    {
+            if (imageLeft2.getAttribute('src') == "BedLEmpty.gif") {
+                imageLeft2.src = "images/Beds/BedLEmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmptySel.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+            }
+        }
+        function changeImageLeft3() {
+            if (imageLeft3.getAttribute('src') == "BedLEmpty.gif") {
+                imageLeft3.src = "images/Beds/BedLEmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmptySel.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+            }
+        }
+        function changeImageLeft4() {
+            if (imageLeft4.getAttribute('src') == "BedLEmpty.gif") {
+                imageLeft4.src = "images/Beds/BedLEmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmptySel.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+            }
+        }
+
+        function changeImageRight1() {
+            if (imageRight1.getAttribute('src') == "BedREmpty.gif") {
+                imageRight.src = "images/Beds/BedREmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmptySel.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+
+            }
+        }
+        function changeImageRight2() {
+            if (imageRight2.getAttribute('src') == "BedREmpty.gif") {
+                imageLeft2.src = "images/Beds/BedREmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmptySel.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+            }
+        }
+        function changeImageRight3() {
+            if (imageRight3.getAttribute('src') == "BedREmpty.gif") {
+                imageRight3.src = "images/Beds/BedREmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmptySel.gif"
+                imageRight4.src = "images/Beds/BedREmpty.gif"
+            }
+        }
+        function changeImageRight4() {
+            if (imageRight4.getAttribute('src') == "BedREmpty.gif") {
+                imageRight4.src = "images/Beds/BedREmptySel.gif";
+            }
+            else {
+                imageLeft1.src = "images/Beds/BedLEmpty.gif";
+                imageLeft2.src = "images/Beds/BedLEmpty.gif";
+                imageLeft3.src = "images/Beds/BedLEmpty.gif";
+                imageLeft4.src = "images/Beds/BedLEmpty.gif";
+                imageRight1.src = "images/Beds/BedREmpty.gif"
+                imageRight2.src = "images/Beds/BedREmpty.gif"
+                imageRight3.src = "images/Beds/BedREmpty.gif"
+                imageRight4.src = "images/Beds/BedREmptySel.gif"
+            }
+        }
+        if (imageLeft1.src == "images/Beds/BedLEmptySel.gif" ||
+            imageLeft2.src == "images/Beds/BedLEmptySel.gif" ||
+            imageLeft3.src == "images/Beds/BedLEmptySel.gif" ||
+            imageLeft4.src == "images/Beds/BedLEmptySel.gif" ||
+            imageRight1.src == "images/Beds/BedREmptySel.gif" ||
+            imageRight2.src == "images/Beds/BedREmptySel.gif" ||
+            imageRight3.src == "images/Beds/BedREmptySel.gif" ||
+            imageRight4.src == "images/Beds/BedREmptySel.gif")
+            {
+
+            if (imageLeft1.src == "images/Beds/BedLEmptySel.gif")
+            {
+                if (document.getElementById("male").checked = true)
+                {
+                    imageLeft1.src = "images/Beds/BedLMale.gif"
+                }
+                if (document.getElementById("female").checked = true)
+                {
+
+                }
+                if (document.getElementById("other").checked = true)
+                {
+
+                }
+            }
+            if (imageLeft2.src == "images/Beds/BedLEmptySel.gif")
+            {
+
+            }
+            if (imageLeft3.src == "images/Beds/BedLEmptySel.gif")
+            {
+
+            }
+            if (imageLeft4.src == "images/Beds/BedLEmptySel.gif")
+            {
+
+            }
+            if (imageRight1.src == "images/Beds/BedREmptySel.gif")
+            {
+
+            }
+            if (imageRight2.src == "images/Beds/BedREmptySel.gif")
+            {
+
+            }
+            if (imageRight3.src == "images/Beds/BedREmptySel.gif")
+            {
+
+            }
+            if (imageRight4.src == "images/Beds/BedREmptySel.gif")
+            {
+
+            }
+        }
+    
+    
+    
+        </script>
+
+</body>
+</html>
